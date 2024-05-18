@@ -1,0 +1,28 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .light {
+    background: conic-gradient(
+      from var(--rotate) at 29% 10%,
+      #f00 0deg 120deg,
+      #ff0 120deg 240deg,
+      #0f0 240deg 360deg
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rotateLight 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes rotateLight {
+    from {
+      --rotate: 0.15turn;
+    }
+    to {
+      --rotate: -0.15turn;
+    }
+  }
+  

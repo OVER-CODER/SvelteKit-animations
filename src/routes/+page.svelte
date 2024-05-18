@@ -2,6 +2,7 @@
     import BallAnimation from './BallAnimation.svelte';
     import MovingWaves from './MovingWaves.svelte';
     import FillingWaves from './FillingWaves.svelte';
+    import LightAnimation from './LightAnimation.svelte';
   </script>
 
   
@@ -9,6 +10,7 @@
     <!-- <BallAnimation /> -->
     <!-- <MovingWaves /> -->
     <FillingWaves />
+    <!-- <LightAnimation /> -->
     <div class="z-10 flex items-center justify-center gap-10 mb-10">
       <div>
         <h1 class="text-6xl font-bold text-violet-600">HEY</h1>
@@ -31,4 +33,5 @@
       <button class="px-6 py-3 text-pink-600 border border-pink-600 rounded-lg">HOW IT WORKS</button>
     </div>
   </div>
+
   
